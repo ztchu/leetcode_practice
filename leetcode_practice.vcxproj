@@ -123,10 +123,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="list\mylist.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="string\big_numer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="list\mylist.h" />
     <ClInclude Include="string\big_numer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
