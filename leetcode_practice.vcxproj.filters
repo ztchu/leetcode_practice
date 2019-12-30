@@ -13,5 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="string">
+      <UniqueIdentifier>{f200dac1-d6d2-47d5-b0b2-dba4c8d05e46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="list">
+      <UniqueIdentifier>{292fb5dc-1d25-4a3b-9d4f-28f0b986a48b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="string\big_numer.cpp">
+      <Filter>string</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="string\big_numer.h">
+      <Filter>string</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
