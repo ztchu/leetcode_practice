@@ -23,9 +23,6 @@
     <ClCompile Include="string\big_numer.cpp">
       <Filter>string</Filter>
     </ClCompile>
-    <ClCompile Include="list\mylist.cpp">
-      <Filter>list</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="string\big_numer.h">
@@ -33,6 +30,9 @@
     </ClInclude>
     <ClInclude Include="list\mylist.h">
       <Filter>list</Filter>
+    </ClInclude>
+    <ClInclude Include="string\longest_substr.h">
+      <Filter>string</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
