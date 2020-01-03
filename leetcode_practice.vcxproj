@@ -130,6 +130,7 @@
     <ClInclude Include="list\mylist.h" />
     <ClInclude Include="string\big_numer.h" />
     <ClInclude Include="string\longest_substr.h" />
+    <ClInclude Include="string\palindrome.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

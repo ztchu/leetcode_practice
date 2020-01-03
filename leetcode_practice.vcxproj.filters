@@ -34,5 +34,8 @@
     <ClInclude Include="string\longest_substr.h">
       <Filter>string</Filter>
     </ClInclude>
+    <ClInclude Include="string\palindrome.h">
+      <Filter>string</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

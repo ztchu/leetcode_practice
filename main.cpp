@@ -1,10 +1,9 @@
 #include <iostream>
 
 #include "list/mylist.h"
-#include "string/big_numer.h"
-#include "string/longest_substr.h"
+#include "string/leetcode_str.h"
 
 int main(int argc, char** argv) {
-    longest_substr::TestLongestSubstr();
+    palindrome::Test();
     return 0;
 }
