@@ -11,7 +11,7 @@ namespace z_string {
     public:
         string convert(string s, int numRows) {
             int len = s.size();
-            if (numRows <= 1 || len <= 1) {
+            if (numRows <= 1 || len <= 1 || len <= numRows) {
                 return s;
             }
             std::vector<std::string> vec(numRows);
@@ -34,7 +34,7 @@ namespace z_string {
     void Test() {
         Solution so;
         std::string str("LEETCODEISHIRING");
-        auto ans = so.convert(str, 3);
+        auto ans = so.convert(str, 50);
         std::cout << ans << std::endl;
     }
 }
