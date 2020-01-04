@@ -4,6 +4,6 @@
 #include "string/leetcode_str.h"
 
 int main(int argc, char** argv) {
-    palindrome::Test();
+    z_string::Test();
     return 0;
 }

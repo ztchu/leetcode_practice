@@ -35,6 +35,9 @@
       <Filter>string</Filter>
     </ClInclude>
     <ClInclude Include="string\palindrome.h">
+      <Filter>list</Filter>
+    </ClInclude>
+    <ClInclude Include="string\z_string.h">
       <Filter>string</Filter>
     </ClInclude>
   </ItemGroup>
