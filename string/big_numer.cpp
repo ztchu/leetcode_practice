@@ -45,3 +45,9 @@ void TestBigNumber() {
     auto ret = first + second;
     std::cout << ret.Value() << std::endl;
 }
+
+void rome::Test() {
+    Solution so;
+    std::string ans = so.intToRoman(10);
+    std::cout << ans << std::endl;
+}

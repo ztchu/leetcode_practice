@@ -129,8 +129,10 @@
   <ItemGroup>
     <ClInclude Include="list\mylist.h" />
     <ClInclude Include="string\big_numer.h" />
+    <ClInclude Include="string\leetcode_str.h" />
     <ClInclude Include="string\longest_substr.h" />
     <ClInclude Include="string\palindrome.h" />
+    <ClInclude Include="string\str_to_i.h" />
     <ClInclude Include="string\z_string.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

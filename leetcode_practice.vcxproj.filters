@@ -15,6 +15,9 @@
     <Filter Include="list">
       <UniqueIdentifier>{292fb5dc-1d25-4a3b-9d4f-28f0b986a48b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="array">
+      <UniqueIdentifier>{79e06eae-7f66-422d-94d5-3d0015cdc8d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -34,10 +37,16 @@
     <ClInclude Include="string\longest_substr.h">
       <Filter>string</Filter>
     </ClInclude>
-    <ClInclude Include="string\palindrome.h">
-      <Filter>list</Filter>
-    </ClInclude>
     <ClInclude Include="string\z_string.h">
+      <Filter>string</Filter>
+    </ClInclude>
+    <ClInclude Include="string\palindrome.h">
+      <Filter>string</Filter>
+    </ClInclude>
+    <ClInclude Include="string\leetcode_str.h">
+      <Filter>string</Filter>
+    </ClInclude>
+    <ClInclude Include="string\str_to_i.h">
       <Filter>string</Filter>
     </ClInclude>
   </ItemGroup>
