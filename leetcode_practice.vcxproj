@@ -127,6 +127,9 @@
     <ClCompile Include="string\big_numer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="array\bucket.h" />
+    <ClInclude Include="array\my_array.h" />
+    <ClInclude Include="array\three_number.h" />
     <ClInclude Include="list\mylist.h" />
     <ClInclude Include="string\big_numer.h" />
     <ClInclude Include="string\leetcode_str.h" />

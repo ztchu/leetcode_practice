@@ -49,5 +49,14 @@
     <ClInclude Include="string\str_to_i.h">
       <Filter>string</Filter>
     </ClInclude>
+    <ClInclude Include="array\bucket.h">
+      <Filter>array</Filter>
+    </ClInclude>
+    <ClInclude Include="array\my_array.h">
+      <Filter>array</Filter>
+    </ClInclude>
+    <ClInclude Include="array\three_number.h">
+      <Filter>array</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
