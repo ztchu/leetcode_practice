@@ -58,5 +58,8 @@
     <ClInclude Include="array\three_number.h">
       <Filter>array</Filter>
     </ClInclude>
+    <ClInclude Include="string\permutation.h">
+      <Filter>string</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

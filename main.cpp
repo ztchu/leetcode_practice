@@ -5,6 +5,6 @@
 #include "string/leetcode_str.h"
 
 int main(int argc, char** argv) {
-    three_number::Test();
+    permutation::Test();
     return 0;
 }
