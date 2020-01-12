@@ -284,20 +284,59 @@ namespace three_number {
             }
             return ans;
         }
+
+        int threeSumClosest(vector<int>& nums, int target) {
+            std::sort(nums.begin(), nums.end());
+            int nums_len = nums.size();
+            int minimum_three = nums[0] + nums[1] + nums[2];
+            int maximum_three = nums[nums_len - 1] + nums[nums_len - 2] + nums[nums_len - 3];
+            if (target <= minimum_three) {
+                return minimum_three;
+            }
+            if (target >= maximum_three) {
+                return maximum_three;
+            }
+
+            int ans = INT_MAX;
+            for (auto i = 0; i < nums_len - 1; ++i) {
+                int left = i + 1;
+                int right = nums_len - 1;
+                int temp = target - nums[i];
+                while (left < right) {
+                    int diff = nums[left] + nums[right] - temp;
+                    if (std::abs(diff) <= std::abs(ans)) {
+                        ans = diff;
+                    }
+                    if (diff > 0) {
+                        --right;
+                    }
+                    else if (diff == 0) {
+                        return target;
+                    }
+                    else {
+                        ++left;
+                    }
+                }
+            }
+            return ans + target;
+        }
     };
 
     
 
     void Test() {
         std::vector<int> input{
-            -4, -2, -1
+            0,1,2
 
         };
         Solution so;
-        auto ans = so.threeSumC(input);
+        /*auto ans = so.threeSumC(input);
         for (auto i = 0; i < ans.size(); ++i) {
             std::for_each(ans[i].begin(), ans[i].end(), [](int num) { std::cout << num << " "; });
             std::cout << std::endl;
-        }
+        }*/
+
+        auto ret = so.threeSumClosest(input, 3);
+        std::cout << ret << std::endl;
     }
 }
