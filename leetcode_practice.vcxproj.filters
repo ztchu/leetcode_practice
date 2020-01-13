@@ -31,9 +31,6 @@
     <ClInclude Include="string\big_numer.h">
       <Filter>string</Filter>
     </ClInclude>
-    <ClInclude Include="list\mylist.h">
-      <Filter>list</Filter>
-    </ClInclude>
     <ClInclude Include="string\longest_substr.h">
       <Filter>string</Filter>
     </ClInclude>
@@ -60,6 +57,12 @@
     </ClInclude>
     <ClInclude Include="string\permutation.h">
       <Filter>string</Filter>
+    </ClInclude>
+    <ClInclude Include="list\add_two_number.h">
+      <Filter>list</Filter>
+    </ClInclude>
+    <ClInclude Include="list\leetcode_list.h">
+      <Filter>list</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

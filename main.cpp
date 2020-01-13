@@ -1,10 +1,10 @@
 #include <iostream>
 
 #include "array/my_array.h"
-#include "list/mylist.h"
+#include "list/leetcode_list.h"
 #include "string/leetcode_str.h"
 
 int main(int argc, char** argv) {
-    three_number::Test();
+    leetcode_list::Test();
     return 0;
 }
