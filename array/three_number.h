@@ -320,23 +320,154 @@ namespace three_number {
             }
             return ans + target;
         }
+
+        vector<vector<int>> threeSumBTarget(vector<int>& nums, int target) {
+            std::vector<std::vector<int>> ans;
+            int nums_len = nums.size();
+            if (nums_len < 3) {
+                return ans;
+            }
+
+            std::sort(nums.begin(), nums.end());
+
+            int low_index = 0;
+            if (2 * nums.back() < target - nums.front()) {
+                auto iter = std::lower_bound(nums.begin(), nums.end(), target - 2 * nums.back());
+                low_index = std::distance(nums.begin(), iter);
+            }
+            int high_index = nums_len - 1;
+            if ((target - 2 * nums.front()) < nums.back()) {
+                auto iter = std::upper_bound(nums.begin(), nums.end(), target - 2 * nums.front());
+                high_index = std::distance(nums.begin(), iter);
+            }
+
+            for (int left = low_index; left < high_index && nums[left] <= 0; ++left) {
+                int temp = target - nums[left];
+                int right = high_index;
+                int mid = left + 1;
+                if (left > 0 && nums[left] == nums[left - 1]) {
+                    continue;
+                }
+                while (mid < right) {
+                    if (nums[mid] + nums[right] < temp) {
+                        ++mid;
+                        continue;
+                    }
+                    else if (nums[mid] + nums[right] == temp) {
+                        auto mid_value = nums[mid];
+                        auto right_value = nums[right];
+                        ans.push_back({ nums[left], mid_value, right_value });
+                        while (mid < right && nums[--right] == right_value) {
+                            continue;
+                        }
+                        while (mid < right && nums[++mid] == mid_value) {
+                            continue;
+                        }
+                    }
+                    else {
+                        --right;
+                    }
+                }
+            }
+            return ans;
+        }
+
+        vector<vector<int>> threeSumBTargetNoSort(vector<int>& nums, int start_index, int target) {
+            std::vector<std::vector<int>> ans;
+            int nums_len = nums.size();
+            if (nums_len - start_index < 3) {
+                return ans;
+            }
+
+            int low_index = start_index;
+            auto start_iter = nums.begin();
+            std::advance(start_iter, low_index);
+            if (2 * nums.back() < target - *start_iter) {
+                auto iter = std::lower_bound(start_iter, nums.end(), target - 2 * nums.back());
+                low_index += std::distance(start_iter, iter);
+            }
+            int high_index = nums_len - 1;
+            if ((target - 2 * (*start_iter)) < nums.back()) {
+                auto iter = std::upper_bound(start_iter, nums.end(), target - 2 * (*start_iter));
+                high_index = start_index + std::distance(start_iter, iter);
+            }
+
+            for (int left = low_index; left < high_index; ++left) {
+                int temp = target - nums[left];
+                int right = high_index;
+                int mid = left + 1;
+                if (left > low_index && nums[left] == nums[left - 1]) {
+                    continue;
+                }
+                while (mid < right) {
+                    if (nums[mid] + nums[right] < temp) {
+                        ++mid;
+                        continue;
+                    }
+                    else if (nums[mid] + nums[right] == temp) {
+                        auto mid_value = nums[mid];
+                        auto right_value = nums[right];
+                        ans.push_back({ nums[left], mid_value, right_value });
+                        while (mid < right && nums[--right] == right_value) {
+                            continue;
+                        }
+                        while (mid < right && nums[++mid] == mid_value) {
+                            continue;
+                        }
+                    }
+                    else {
+                        --right;
+                    }
+                }
+            }
+            return ans;
+        }
+
+        vector<vector<int>> fourSum(vector<int>& nums, int target) {
+            vector<vector<int>> ans;
+            int nums_len = nums.size();
+            if (nums_len < 4) {
+                return ans;
+            }
+
+            std::sort(nums.begin(), nums.end());
+
+            for (auto i = 0; i < nums_len; ++i) {
+                auto ret = threeSumBTargetNoSort(nums, i + 1, target - nums[i]);
+                if (ret.empty()) {
+                    continue;
+                }
+                else {
+                    if (i > 0 && nums[i] == nums[i - 1]) {
+                        continue;
+                    }
+                    else {
+                        for (auto k = 0; k < ret.size(); ++k) {
+                            ret[k].insert(ret[k].begin(), nums[i]);
+                            ans.push_back(std::move(ret[k]));
+                        }
+                    }
+                }
+            }
+            return ans;
+        }
     };
 
     
 
     void Test() {
         std::vector<int> input{
-            0,1,2
+            5,5,3,5,1,-5,1,-2
 
         };
         Solution so;
-        /*auto ans = so.threeSumC(input);
+        auto ans = so.fourSum(input, 4);
         for (auto i = 0; i < ans.size(); ++i) {
             std::for_each(ans[i].begin(), ans[i].end(), [](int num) { std::cout << num << " "; });
             std::cout << std::endl;
-        }*/
+        }
 
-        auto ret = so.threeSumClosest(input, 3);
-        std::cout << ret << std::endl;
+        /*auto ret = so.threeSumClosest(input, 3);
+        std::cout << ret << std::endl;*/
     }
 }
