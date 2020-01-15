@@ -132,6 +132,7 @@
     <ClInclude Include="array\three_number.h" />
     <ClInclude Include="list\add_two_number.h" />
     <ClInclude Include="list\leetcode_list.h" />
+    <ClInclude Include="list\swap_pair.h" />
     <ClInclude Include="string\big_numer.h" />
     <ClInclude Include="string\leetcode_str.h" />
     <ClInclude Include="string\longest_substr.h" />
@@ -139,6 +140,8 @@
     <ClInclude Include="string\permutation.h" />
     <ClInclude Include="string\str_to_i.h" />
     <ClInclude Include="string\z_string.h" />
+    <ClInclude Include="symbol\bracket.h" />
+    <ClInclude Include="symbol\leetcode_symbol.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

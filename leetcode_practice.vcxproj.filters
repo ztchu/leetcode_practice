@@ -18,6 +18,9 @@
     <Filter Include="array">
       <UniqueIdentifier>{79e06eae-7f66-422d-94d5-3d0015cdc8d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="symbol">
+      <UniqueIdentifier>{b1dd1d58-cc6a-49c2-8373-6c24d18d3252}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,6 +65,15 @@
       <Filter>list</Filter>
     </ClInclude>
     <ClInclude Include="list\leetcode_list.h">
+      <Filter>list</Filter>
+    </ClInclude>
+    <ClInclude Include="symbol\leetcode_symbol.h">
+      <Filter>symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="symbol\bracket.h">
+      <Filter>symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="list\swap_pair.h">
       <Filter>list</Filter>
     </ClInclude>
   </ItemGroup>
