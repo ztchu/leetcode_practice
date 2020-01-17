@@ -21,6 +21,9 @@
     <Filter Include="symbol">
       <UniqueIdentifier>{b1dd1d58-cc6a-49c2-8373-6c24d18d3252}</UniqueIdentifier>
     </Filter>
+    <Filter Include="permutation">
+      <UniqueIdentifier>{c20add36-00b9-4224-81f5-40c912d60f7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -75,6 +78,15 @@
     </ClInclude>
     <ClInclude Include="list\swap_pair.h">
       <Filter>list</Filter>
+    </ClInclude>
+    <ClInclude Include="permutation\leetcode_permutation.h">
+      <Filter>permutation</Filter>
+    </ClInclude>
+    <ClInclude Include="permutation\next_permutation.h">
+      <Filter>permutation</Filter>
+    </ClInclude>
+    <ClInclude Include="array\circle_array.h">
+      <Filter>array</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
