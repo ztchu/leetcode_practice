@@ -88,5 +88,11 @@
     <ClInclude Include="array\circle_array.h">
       <Filter>array</Filter>
     </ClInclude>
+    <ClInclude Include="array\binary_search.h">
+      <Filter>array</Filter>
+    </ClInclude>
+    <ClInclude Include="array\combination_sum.h">
+      <Filter>array</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -127,8 +127,10 @@
     <ClCompile Include="string\big_numer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="array\binary_search.h" />
     <ClInclude Include="array\bucket.h" />
     <ClInclude Include="array\circle_array.h" />
+    <ClInclude Include="array\combination_sum.h" />
     <ClInclude Include="array\my_array.h" />
     <ClInclude Include="array\three_number.h" />
     <ClInclude Include="list\add_two_number.h" />

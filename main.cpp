@@ -7,6 +7,6 @@
 #include "permutation//leetcode_permutation.h"
 
 int main(int argc, char** argv) {
-    circle_array::Test();
+    combination_sum::Test();
     return 0;
 }
