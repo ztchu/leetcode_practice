@@ -77,6 +77,23 @@ namespace longest_substr {
             }
             return ans;
         }
+
+        std::string longestCommonPrefix(std::vector<std::string>& strs) {
+            if (strs.size() == 0) {
+                return "";
+            }
+
+            std::string ans = strs[0];
+            for (int i = 1; i < strs.size(); ++i) {
+                while (strs[i].find(ans) != 0) {
+                    ans = ans.substr(0, ans.length() - 1);
+                    if (ans.empty()) {
+                        return "";
+                    }
+                }
+            }
+            return ans;
+        }
     };
 
     void TestLongestSubstr() {

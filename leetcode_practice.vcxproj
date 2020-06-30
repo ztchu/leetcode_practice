@@ -124,7 +124,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="number\number.cpp" />
     <ClCompile Include="string\big_numer.cpp" />
+    <ClCompile Include="string\expression.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="array\binary_search.h" />
@@ -136,9 +138,11 @@
     <ClInclude Include="list\add_two_number.h" />
     <ClInclude Include="list\leetcode_list.h" />
     <ClInclude Include="list\swap_pair.h" />
+    <ClInclude Include="number\number.h" />
     <ClInclude Include="permutation\leetcode_permutation.h" />
     <ClInclude Include="permutation\next_permutation.h" />
     <ClInclude Include="string\big_numer.h" />
+    <ClInclude Include="string\expression.h" />
     <ClInclude Include="string\leetcode_str.h" />
     <ClInclude Include="string\longest_substr.h" />
     <ClInclude Include="string\palindrome.h" />

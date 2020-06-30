@@ -24,12 +24,21 @@
     <Filter Include="permutation">
       <UniqueIdentifier>{c20add36-00b9-4224-81f5-40c912d60f7e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="number">
+      <UniqueIdentifier>{14036f62-0306-4b79-8bf1-f60dc5cc688a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="string\big_numer.cpp">
+      <Filter>string</Filter>
+    </ClCompile>
+    <ClCompile Include="number\number.cpp">
+      <Filter>number</Filter>
+    </ClCompile>
+    <ClCompile Include="string\expression.cpp">
       <Filter>string</Filter>
     </ClCompile>
   </ItemGroup>
@@ -93,6 +102,12 @@
     </ClInclude>
     <ClInclude Include="array\combination_sum.h">
       <Filter>array</Filter>
+    </ClInclude>
+    <ClInclude Include="number\number.h">
+      <Filter>number</Filter>
+    </ClInclude>
+    <ClInclude Include="string\expression.h">
+      <Filter>string</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
